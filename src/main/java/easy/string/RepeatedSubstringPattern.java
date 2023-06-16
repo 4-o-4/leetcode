@@ -12,15 +12,16 @@ public class RepeatedSubstringPattern {
                 j = 0;
             if (sArray[j] == sArray[i]) {
                 if (k == 0)
-                    k = i - j;
+                    k = i;
                 j++;
             } else {
                 if (k != 0) {
-                    i = k + 1;
+                    i = k;
                     k = 0;
                 }
+                j = 0;
             }
         }
-        return k == j;
+        return k == j && k != 0;
     }
 }

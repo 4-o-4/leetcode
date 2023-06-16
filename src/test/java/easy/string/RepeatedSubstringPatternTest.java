@@ -54,4 +54,34 @@ class RepeatedSubstringPatternTest {
         String s = "abacababacab";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
+
+    @Test
+    void licenseKeyFormatting8() {
+        String s = "ababababababaababababababaababababababa";
+        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+    }
+
+    @Test
+    void licenseKeyFormatting9() {
+        String s = "ababac";
+        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+    }
+
+    @Test
+    void licenseKeyFormatting10() {
+        String s = "babbbbaabbababbaaaaababbaaabbbbaaabbbababbbbabaabababaabaaabbbabababbbabababaababaaaaabbabaaaabaaaab";
+        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+    }
+
+    @Test
+    void licenseKeyFormatting11() {
+        String s = "abaabaa";
+        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+    }
+
+    @Test
+    void licenseKeyFormatting12() {
+        String s = "babbabbabbabbab";
+        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+    }
 }
