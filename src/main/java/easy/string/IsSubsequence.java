@@ -6,6 +6,7 @@ public class IsSubsequence {
         byte[] tBytes = t.getBytes();
         int size = s.length();
         int jj = 0;
+
         for (int i = 0; i < s.length(); i++) {
             for (int j = jj; j < t.length(); j++) {
                 if (sBytes[i] == tBytes[j]) {

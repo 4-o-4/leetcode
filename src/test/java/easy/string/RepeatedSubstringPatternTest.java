@@ -14,73 +14,73 @@ class RepeatedSubstringPatternTest {
     }
 
     @Test
-    void licenseKeyFormatting1() {
+    void repeatedSubstringPatternExample1() {
         String s = "abab";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting2() {
+    void repeatedSubstringPatternExample2() {
         String s = "aba";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting3() {
+    void repeatedSubstringPatternExample3() {
         String s = "abcabcabcabc";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting4() {
+    void repeatedSubstringPatternExample4() {
         String s = "ababab";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting5() {
+    void repeatedSubstringPatternExample5() {
         String s = "ababba";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting6() {
+    void repeatedSubstringPatternExample6() {
         String s = "abac";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting7() {
+    void repeatedSubstringPatternExample7() {
         String s = "abacababacab";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting8() {
+    void repeatedSubstringPatternExample8() {
         String s = "ababababababaababababababaababababababa";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting9() {
+    void repeatedSubstringPatternExample9() {
         String s = "ababac";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting10() {
+    void repeatedSubstringPatternExample10() {
         String s = "babbbbaabbababbaaaaababbaaabbbbaaabbbababbbbabaabababaabaaabbbabababbbabababaababaaaaabbabaaaabaaaab";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting11() {
+    void repeatedSubstringPatternExample11() {
         String s = "abaabaa";
         assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }
 
     @Test
-    void licenseKeyFormatting12() {
+    void repeatedSubstringPatternExample12() {
         String s = "babbabbabbabbab";
         assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
     }

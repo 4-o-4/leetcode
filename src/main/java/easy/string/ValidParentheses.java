@@ -7,6 +7,7 @@ public class ValidParentheses {
         char[] arr = new char[]{'(', ')', '[', ']', '{', '}'};
         Stack<Integer> stack = new Stack<>();
         Integer c = null;
+
         for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j < arr.length; j += 2) {
                 if (s.charAt(i) == arr[j]) {

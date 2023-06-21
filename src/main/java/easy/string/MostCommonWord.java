@@ -21,7 +21,6 @@ public class MostCommonWord {
         }
         for (String s : banned)
             map.remove(s);
-
         int max = 0;
         String key = null;
         for (Map.Entry<String, Integer> entry : map.entrySet()) {

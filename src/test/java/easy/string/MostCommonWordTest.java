@@ -14,14 +14,14 @@ class MostCommonWordTest {
     }
 
     @Test
-    void mostCommonWord1() {
+    void mostCommonWordExample1() {
         String paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
         String[] banned = new String[]{"hit"};
         assertEquals("ball", mostCommonWord.mostCommonWord(paragraph, banned));
     }
 
     @Test
-    void mostCommonWord2() {
+    void mostCommonWordExample2() {
         String paragraph = "a.";
         String[] banned = new String[]{};
         assertEquals("a", mostCommonWord.mostCommonWord(paragraph, banned));

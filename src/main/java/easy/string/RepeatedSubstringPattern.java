@@ -7,6 +7,7 @@ public class RepeatedSubstringPattern {
         char[] sArray = s.toCharArray();
         int length = s.length();
         int k = 0, j = 0;
+
         for (int i = 1; i < length; i++) {
             if (k == j)
                 j = 0;

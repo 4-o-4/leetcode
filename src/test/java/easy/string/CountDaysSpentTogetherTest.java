@@ -14,7 +14,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample1() {
+    void countDaysSpentTogetherExample1() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
@@ -23,7 +23,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample2() {
+    void countDaysSpentTogetherExample2() {
         String arriveAlice = "10-01",
                 leaveAlice = "10-31",
                 arriveBob = "11-01",
@@ -32,7 +32,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample3() {
+    void countDaysSpentTogetherExample3() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
@@ -41,7 +41,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample4() {
+    void countDaysSpentTogetherExample4() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
@@ -50,7 +50,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample5() {
+    void countDaysSpentTogetherExample5() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
@@ -59,7 +59,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample6() {
+    void countDaysSpentTogetherExample6() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
@@ -68,7 +68,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample7() {
+    void countDaysSpentTogetherExample7() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
@@ -77,7 +77,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample8() {
+    void countDaysSpentTogetherExample8() {
         String arriveAlice = "08-15",
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
@@ -86,7 +86,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample9() {
+    void countDaysSpentTogetherExample9() {
         String arriveAlice = "09-01",
                 leaveAlice = "10-19",
                 arriveBob = "06-19",
@@ -95,7 +95,7 @@ class CountDaysSpentTogetherTest {
     }
 
     @Test
-    void isSubsequenceExample10() {
+    void countDaysSpentTogetherExample10() {
         String arriveAlice = "08-02",
                 leaveAlice = "08-02",
                 arriveBob = "08-02",
