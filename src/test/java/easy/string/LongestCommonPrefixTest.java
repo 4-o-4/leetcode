@@ -102,4 +102,16 @@ class LongestCommonPrefixTest {
         String[] strs = new String[]{"flower", "flower", "flower", "flower"};
         assertEquals("flower", longestCommonPrefix.longestCommonPrefix(strs));
     }
+
+    @Test
+    void longestCommonPrefixExample16() {
+        String[] strs = new String[]{"aa", "ab"};
+        assertEquals("a", longestCommonPrefix.longestCommonPrefix(strs));
+    }
+
+    @Test
+    void longestCommonPrefixExample17() {
+        String[] strs = new String[]{"abab", "aba", "abc"};
+        assertEquals("ab", longestCommonPrefix.longestCommonPrefix(strs));
+    }
 }
