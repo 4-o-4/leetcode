@@ -2,7 +2,7 @@ package easy.string;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ScoreOfStringTest {
     private final ScoreOfString scoreOfString = new ScoreOfString();
