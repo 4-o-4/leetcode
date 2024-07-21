@@ -1,27 +1,21 @@
 package easy.array;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class BuildArrayFromPermutationTest {
-    private BuildArrayFromPermutation buildArrayFromPermutation;
-
-    @BeforeEach
-    void init() {
-        this.buildArrayFromPermutation = new BuildArrayFromPermutation();
-    }
+    private final BuildArrayFromPermutation test = new BuildArrayFromPermutation();
 
     @Test
-    void buildArrayExample1() {
+    void example1() {
         int[] nums = new int[]{0, 2, 1, 5, 3, 4};
-        assertArrayEquals(new int[]{0, 1, 2, 4, 5, 3}, buildArrayFromPermutation.buildArray(nums));
+        assertArrayEquals(new int[]{0, 1, 2, 4, 5, 3}, test.buildArray(nums));
     }
 
     @Test
-    void buildArrayExample2() {
+    void example2() {
         int[] nums = new int[]{5, 0, 1, 2, 3, 4};
-        assertArrayEquals(new int[]{4, 5, 0, 1, 2, 3}, buildArrayFromPermutation.buildArray(nums));
+        assertArrayEquals(new int[]{4, 5, 0, 1, 2, 3}, test.buildArray(nums));
     }
 }

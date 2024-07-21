@@ -5,23 +5,23 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SplitStringInBalancedStringsTest {
-    private final SplitStringInBalancedStrings splitStringInBalancedStrings = new SplitStringInBalancedStrings();
+    private final SplitStringInBalancedStrings test = new SplitStringInBalancedStrings();
 
     @Test
-    void Example1() {
+    void example1() {
         String s = "RLRRLLRLRL";
-        assertEquals(4, splitStringInBalancedStrings.balancedStringSplit(s));
+        assertEquals(4, test.balancedStringSplit(s));
     }
 
     @Test
-    void Example2() {
+    void example2() {
         String s = "RLRRRLLRLL";
-        assertEquals(2, splitStringInBalancedStrings.balancedStringSplit(s));
+        assertEquals(2, test.balancedStringSplit(s));
     }
 
     @Test
-    void Example3() {
+    void example3() {
         String s = "LLLLRRRR";
-        assertEquals(1, splitStringInBalancedStrings.balancedStringSplit(s));
+        assertEquals(1, test.balancedStringSplit(s));
     }
 }

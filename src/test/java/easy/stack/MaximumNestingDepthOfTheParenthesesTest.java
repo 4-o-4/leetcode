@@ -1,27 +1,21 @@
 package easy.stack;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MaximumNestingDepthOfTheParenthesesTest {
-    private MaximumNestingDepthOfTheParentheses maximumNestingDepthOfTheParentheses;
-
-    @BeforeEach
-    void init() {
-        this.maximumNestingDepthOfTheParentheses = new MaximumNestingDepthOfTheParentheses();
-    }
+    private final MaximumNestingDepthOfTheParentheses test = new MaximumNestingDepthOfTheParentheses();
 
     @Test
-    void maxDepthExample1() {
+    void example1() {
         String s = "(1+(2*3)+((8)/4))+1";
-        assertEquals(3, maximumNestingDepthOfTheParentheses.maxDepth(s));
+        assertEquals(3, test.maxDepth(s));
     }
 
     @Test
-    void maxDepthExample2() {
+    void example2() {
         String s = "(1)+((2))+(((3)))";
-        assertEquals(3, maximumNestingDepthOfTheParentheses.maxDepth(s));
+        assertEquals(3, test.maxDepth(s));
     }
 }

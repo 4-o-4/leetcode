@@ -5,33 +5,33 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReversePrefixOfWordTest {
-    private final ReversePrefixOfWord reversePrefixOfWord = new ReversePrefixOfWord();
+    private final ReversePrefixOfWord test = new ReversePrefixOfWord();
 
     @Test
-    void Example1() {
+    void example1() {
         String word = "abcdefd";
         char ch = 'd';
-        assertEquals("dcbaefd", reversePrefixOfWord.reversePrefix(word, ch));
+        assertEquals("dcbaefd", test.reversePrefix(word, ch));
     }
 
     @Test
-    void Example2() {
+    void example2() {
         String word = "xyxzxe";
         char ch = 'z';
-        assertEquals("zxyxxe", reversePrefixOfWord.reversePrefix(word, ch));
+        assertEquals("zxyxxe", test.reversePrefix(word, ch));
     }
 
     @Test
-    void Example3() {
+    void example3() {
         String word = "abcd";
         char ch = 'z';
-        assertEquals("abcd", reversePrefixOfWord.reversePrefix(word, ch));
+        assertEquals("abcd", test.reversePrefix(word, ch));
     }
 
     @Test
-    void Example4() {
+    void example4() {
         String word = "abcd";
         char ch = 'd';
-        assertEquals("dcba", reversePrefixOfWord.reversePrefix(word, ch));
+        assertEquals("dcba", test.reversePrefix(word, ch));
     }
 }

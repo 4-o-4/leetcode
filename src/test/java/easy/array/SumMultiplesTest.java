@@ -1,45 +1,39 @@
 package easy.array;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SumMultiplesTest {
-    private SumMultiples sumMultiples;
-
-    @BeforeEach
-    void init() {
-        this.sumMultiples = new SumMultiples();
-    }
+    private final SumMultiples test = new SumMultiples();
 
     @Test
-    void sumOfMultiplesExample1() {
+    void example1() {
         int n = 7;
-        assertEquals(21, sumMultiples.sumOfMultiples(n));
+        assertEquals(21, test.sumOfMultiples(n));
     }
 
     @Test
-    void sumOfMultiplesExample2() {
+    void example2() {
         int n = 10;
-        assertEquals(40, sumMultiples.sumOfMultiples(n));
+        assertEquals(40, test.sumOfMultiples(n));
     }
 
     @Test
-    void sumOfMultiplesExample3() {
+    void example3() {
         int n = 9;
-        assertEquals(30, sumMultiples.sumOfMultiples(n));
+        assertEquals(30, test.sumOfMultiples(n));
     }
 
     @Test
-    void sumOfMultiplesExample4() {
+    void example4() {
         int n = 15;
-        assertEquals(81, sumMultiples.sumOfMultiples(n));
+        assertEquals(81, test.sumOfMultiples(n));
     }
 
     @Test
-    void sumOfMultiplesExample5() {
+    void example5() {
         int n = 16;
-        assertEquals(81, sumMultiples.sumOfMultiples(n));
+        assertEquals(81, test.sumOfMultiples(n));
     }
 }

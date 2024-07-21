@@ -1,27 +1,21 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DefangingAnIPAddressTest {
-    private DefangingAnIPAddress defangingAnIPAddress;
-
-    @BeforeEach
-    void init() {
-        this.defangingAnIPAddress = new DefangingAnIPAddress();
-    }
+    private final DefangingAnIPAddress test = new DefangingAnIPAddress();
 
     @Test
-    void defangIPaddrExample1() {
+    void example1() {
         String address = "1.1.1.1";
-        assertEquals("1[.]1[.]1[.]1", defangingAnIPAddress.defangIPaddr(address));
+        assertEquals("1[.]1[.]1[.]1", test.defangIPaddr(address));
     }
 
     @Test
-    void defangIPaddrExample2() {
+    void example2() {
         String address = "255.100.50.0";
-        assertEquals("255[.]100[.]50[.]0", defangingAnIPAddress.defangIPaddr(address));
+        assertEquals("255[.]100[.]50[.]0", test.defangIPaddr(address));
     }
 }

@@ -1,33 +1,27 @@
 package easy.stack;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RemoveOutermostParenthesesTest {
-    private RemoveOutermostParentheses removeOutermostParentheses;
-
-    @BeforeEach
-    void init() {
-        this.removeOutermostParentheses = new RemoveOutermostParentheses();
-    }
+    private final RemoveOutermostParentheses test = new RemoveOutermostParentheses();
 
     @Test
-    void removeOuterParenthesesExample1() {
+    void example1() {
         String s = "(()())(())";
-        assertEquals("()()()", removeOutermostParentheses.removeOuterParentheses(s));
+        assertEquals("()()()", test.removeOuterParentheses(s));
     }
 
     @Test
-    void removeOuterParenthesesExample2() {
+    void example2() {
         String s = "(()())(())(()(()))";
-        assertEquals("()()()()(())", removeOutermostParentheses.removeOuterParentheses(s));
+        assertEquals("()()()()(())", test.removeOuterParentheses(s));
     }
 
     @Test
-    void removeOuterParenthesesExample3() {
+    void example3() {
         String s = "()()";
-        assertEquals("", removeOutermostParentheses.removeOuterParentheses(s));
+        assertEquals("", test.removeOuterParentheses(s));
     }
 }

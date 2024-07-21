@@ -1,39 +1,34 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ValidParenthesesTest {
-    private ValidParentheses validParentheses;
-
-    @BeforeEach
-    void init() {
-        this.validParentheses = new ValidParentheses();
-    }
+    private final ValidParentheses test = new ValidParentheses();
 
     @Test
-    void isValidExample1() {
+    void example1() {
         String s = "()[]{}";
-        assertTrue(validParentheses.isValid(s));
+        assertTrue(test.isValid(s));
     }
 
     @Test
-    void isValidExample2() {
+    void example2() {
         String s = "(]";
-        assertFalse(validParentheses.isValid(s));
+        assertFalse(test.isValid(s));
     }
 
     @Test
-    void isValidExample3() {
+    void example3() {
         String s = ")";
-        assertFalse(validParentheses.isValid(s));
+        assertFalse(test.isValid(s));
     }
 
     @Test
-    void isValidExample4() {
+    void example4() {
         String s = "(){}}{";
-        assertFalse(validParentheses.isValid(s));
+        assertFalse(test.isValid(s));
     }
 }

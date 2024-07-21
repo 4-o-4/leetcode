@@ -7,10 +7,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CountItemsMatchingRuleTest {
-    private final CountItemsMatchingRule countItemsMatchingRule = new CountItemsMatchingRule();
+    private final CountItemsMatchingRule test = new CountItemsMatchingRule();
 
     @Test
-    void Example1() {
+    void example1() {
         List<List<String>> items = List.of(
                 List.of("phone", "blue", "pixel"),
                 List.of("computer", "silver", "lenovo"),
@@ -18,11 +18,11 @@ class CountItemsMatchingRuleTest {
         );
         String ruleKey = "color";
         String ruleValue = "silver";
-        assertEquals(1, countItemsMatchingRule.countMatches(items, ruleKey, ruleValue));
+        assertEquals(1, test.countMatches(items, ruleKey, ruleValue));
     }
 
     @Test
-    void Example2() {
+    void example2() {
         List<List<String>> items = List.of(
                 List.of("phone", "blue", "pixel"),
                 List.of("computer", "silver", "phone"),
@@ -30,6 +30,6 @@ class CountItemsMatchingRuleTest {
         );
         String ruleKey = "type";
         String ruleValue = "phone";
-        assertEquals(2, countItemsMatchingRule.countMatches(items, ruleKey, ruleValue));
+        assertEquals(2, test.countMatches(items, ruleKey, ruleValue));
     }
 }

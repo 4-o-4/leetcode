@@ -1,49 +1,43 @@
 package easy.queue;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class NumberOfRecentCallsTest {
-    private NumberOfRecentCalls numberOfRecentCalls;
-
-    @BeforeEach
-    void init() {
-        this.numberOfRecentCalls = new NumberOfRecentCalls();
-    }
+    private final NumberOfRecentCalls test = new NumberOfRecentCalls();
 
     @Test
-    void pingExample1() {
+    void example1() {
         List<Integer> ping = List.of(
-                numberOfRecentCalls.ping(1),
-                numberOfRecentCalls.ping(100),
-                numberOfRecentCalls.ping(3001),
-                numberOfRecentCalls.ping(3002));
+                test.ping(1),
+                test.ping(100),
+                test.ping(3001),
+                test.ping(3002));
         assertArrayEquals(new Integer[]{1, 2, 3, 3}, ping.toArray());
     }
 
     @Test
-    void pingExample2() {
+    void example2() {
         List<Integer> ping = List.of(
-                numberOfRecentCalls.ping(1178),
-                numberOfRecentCalls.ping(1483),
-                numberOfRecentCalls.ping(1563),
-                numberOfRecentCalls.ping(4054),
-                numberOfRecentCalls.ping(4152));
+                test.ping(1178),
+                test.ping(1483),
+                test.ping(1563),
+                test.ping(4054),
+                test.ping(4152));
         assertArrayEquals(new Integer[]{1, 2, 3, 4, 5}, ping.toArray());
     }
 
     @Test
-    void pingExample3() {
+    void example3() {
         List<Integer> ping = List.of(
-                numberOfRecentCalls.ping(642),
-                numberOfRecentCalls.ping(1849),
-                numberOfRecentCalls.ping(4921),
-                numberOfRecentCalls.ping(5936),
-                numberOfRecentCalls.ping(5957));
+                test.ping(642),
+                test.ping(1849),
+                test.ping(4921),
+                test.ping(5936),
+                test.ping(5957));
         assertArrayEquals(new Integer[]{1, 2, 1, 2, 3}, ping.toArray());
     }
 }

@@ -1,33 +1,27 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GoalParserInterpretationTest {
-    private GoalParserInterpretation goalParserInterpretation;
-
-    @BeforeEach
-    void init() {
-        this.goalParserInterpretation = new GoalParserInterpretation();
-    }
+    private final GoalParserInterpretation test = new GoalParserInterpretation();
 
     @Test
-    void interpretExample1() {
+    void example1() {
         String command = "G()(al)";
-        assertEquals("Goal", goalParserInterpretation.interpret(command));
+        assertEquals("Goal", test.interpret(command));
     }
 
     @Test
-    void interpretExample2() {
+    void example2() {
         String command = "G()()()()(al)";
-        assertEquals("Gooooal", goalParserInterpretation.interpret(command));
+        assertEquals("Gooooal", test.interpret(command));
     }
 
     @Test
-    void interpretExample3() {
+    void example3() {
         String command = "(al)G(al)()()G";
-        assertEquals("alGalooG", goalParserInterpretation.interpret(command));
+        assertEquals("alGalooG", test.interpret(command));
     }
 }

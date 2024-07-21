@@ -1,50 +1,45 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class IsSubsequenceTest {
-    private IsSubsequence isSubsequence;
-
-    @BeforeEach
-    void init() {
-        this.isSubsequence = new IsSubsequence();
-    }
+    private final IsSubsequence test = new IsSubsequence();
 
     @Test
-    void isSubsequenceExample1() {
+    void example1() {
         String s = "abc";
         String t = "ahbgdc";
-        assertTrue(isSubsequence.isSubsequence(s, t));
+        assertTrue(test.isSubsequence(s, t));
     }
 
     @Test
-    void isSubsequenceExample2() {
+    void example2() {
         String s = "axc";
         String t = "ahbgdc";
-        assertFalse(isSubsequence.isSubsequence(s, t));
+        assertFalse(test.isSubsequence(s, t));
     }
 
     @Test
-    void isSubsequenceExample3() {
+    void example3() {
         String s = "bb";
         String t = "ahbgdc";
-        assertFalse(isSubsequence.isSubsequence(s, t));
+        assertFalse(test.isSubsequence(s, t));
     }
 
     @Test
-    void isSubsequenceExample4() {
+    void example4() {
         String s = "aaaaaa";
         String t = "bbaaaa";
-        assertFalse(isSubsequence.isSubsequence(s, t));
+        assertFalse(test.isSubsequence(s, t));
     }
 
     @Test
-    void isSubsequenceExample5() {
+    void example5() {
         String s = "ab";
         String t = "baab";
-        assertTrue(isSubsequence.isSubsequence(s, t));
+        assertTrue(test.isSubsequence(s, t));
     }
 }

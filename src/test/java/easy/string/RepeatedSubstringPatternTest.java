@@ -1,87 +1,82 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RepeatedSubstringPatternTest {
-    private RepeatedSubstringPattern repeatedSubstringPattern;
-
-    @BeforeEach
-    void init() {
-        this.repeatedSubstringPattern = new RepeatedSubstringPattern();
-    }
+    private final RepeatedSubstringPattern test = new RepeatedSubstringPattern();
 
     @Test
-    void repeatedSubstringPatternExample1() {
+    void example1() {
         String s = "abab";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample2() {
+    void example2() {
         String s = "aba";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample3() {
+    void example3() {
         String s = "abcabcabcabc";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample4() {
+    void example4() {
         String s = "ababab";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample5() {
+    void example5() {
         String s = "ababba";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample6() {
+    void example6() {
         String s = "abac";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample7() {
+    void example7() {
         String s = "abacababacab";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample8() {
+    void example8() {
         String s = "ababababababaababababababaababababababa";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample9() {
+    void example9() {
         String s = "ababac";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample10() {
+    void example10() {
         String s = "babbbbaabbababbaaaaababbaaabbbbaaabbbababbbbabaabababaabaaabbbabababbbabababaababaaaaabbabaaaabaaaab";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample11() {
+    void example11() {
         String s = "abaabaa";
-        assertFalse(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertFalse(test.repeatedSubstringPattern(s));
     }
 
     @Test
-    void repeatedSubstringPatternExample12() {
+    void example12() {
         String s = "babbabbabbabbab";
-        assertTrue(repeatedSubstringPattern.repeatedSubstringPattern(s));
+        assertTrue(test.repeatedSubstringPattern(s));
     }
 }

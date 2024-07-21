@@ -1,33 +1,27 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FinalValueOfVariableAfterPerformingOperationsTest {
-    private FinalValueOfVariableAfterPerformingOperations finalValueOfVariableAfterPerformingOperations;
-
-    @BeforeEach
-    void init() {
-        this.finalValueOfVariableAfterPerformingOperations = new FinalValueOfVariableAfterPerformingOperations();
-    }
+    private final FinalValueOfVariableAfterPerformingOperations test = new FinalValueOfVariableAfterPerformingOperations();
 
     @Test
-    void finalValueAfterOperationsExample1() {
+    void example1() {
         String[] operations = new String[]{"--X", "X++", "X++"};
-        assertEquals(1, finalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(operations));
+        assertEquals(1, test.finalValueAfterOperations(operations));
     }
 
     @Test
-    void finalValueAfterOperationsExample2() {
+    void example2() {
         String[] operations = new String[]{"++X", "++X", "X++"};
-        assertEquals(3, finalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(operations));
+        assertEquals(3, test.finalValueAfterOperations(operations));
     }
 
     @Test
-    void finalValueAfterOperationsExample3() {
+    void example3() {
         String[] operations = new String[]{"X++", "++X", "--X", "X--"};
-        assertEquals(0, finalValueOfVariableAfterPerformingOperations.finalValueAfterOperations(operations));
+        assertEquals(0, test.finalValueAfterOperations(operations));
     }
 }

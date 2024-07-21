@@ -1,43 +1,37 @@
 package easy.queue;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class NumberOfStudentsUnableToEatLunchTest {
-    private NumberOfStudentsUnableToEatLunch numberOfStudentsUnableToEatLunch;
-
-    @BeforeEach
-    void init() {
-        this.numberOfStudentsUnableToEatLunch = new NumberOfStudentsUnableToEatLunch();
-    }
+    private final NumberOfStudentsUnableToEatLunch test = new NumberOfStudentsUnableToEatLunch();
 
     @Test
-    void countStudentsExample1() {
+    void example1() {
         int[] students = new int[]{1, 1, 0, 0};
         int[] sandwiches = new int[]{0, 1, 0, 1};
-        assertEquals(0, numberOfStudentsUnableToEatLunch.countStudents(students, sandwiches));
+        assertEquals(0, test.countStudents(students, sandwiches));
     }
 
     @Test
-    void countStudentsExample2() {
+    void example2() {
         int[] students = new int[]{1, 1, 1, 0, 0, 1};
         int[] sandwiches = new int[]{1, 0, 0, 0, 1, 1};
-        assertEquals(3, numberOfStudentsUnableToEatLunch.countStudents(students, sandwiches));
+        assertEquals(3, test.countStudents(students, sandwiches));
     }
 
     @Test
-    void countStudentsExample3() {
+    void example3() {
         int[] students = new int[]{0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1};
         int[] sandwiches = new int[]{1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0};
-        assertEquals(1, numberOfStudentsUnableToEatLunch.countStudents(students, sandwiches));
+        assertEquals(1, test.countStudents(students, sandwiches));
     }
 
     @Test
-    void countStudentsExample4() {
+    void example4() {
         int[] students = new int[]{1, 1, 1, 0, 0, 1};
         int[] sandwiches = new int[]{1, 0, 0, 0, 1, 1};
-        assertEquals(3, numberOfStudentsUnableToEatLunch.countStudents(students, sandwiches));
+        assertEquals(3, test.countStudents(students, sandwiches));
     }
 }

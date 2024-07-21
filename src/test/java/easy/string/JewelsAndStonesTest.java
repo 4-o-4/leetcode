@@ -1,27 +1,21 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class JewelsAndStonesTest {
-    private JewelsAndStones jewelsAndStones;
-
-    @BeforeEach
-    void init() {
-        this.jewelsAndStones = new JewelsAndStones();
-    }
+    private final JewelsAndStones test = new JewelsAndStones();
 
     @Test
-    void numJewelsInStonesExample1() {
+    void example1() {
         String jewels = "aA", stones = "aAAbbbb";
-        assertEquals(3, jewelsAndStones.numJewelsInStones(jewels, stones));
+        assertEquals(3, test.numJewelsInStones(jewels, stones));
     }
 
     @Test
-    void numJewelsInStonesExample2() {
+    void example2() {
         String jewels = "z", stones = "ZZ";
-        assertEquals(0, jewelsAndStones.numJewelsInStones(jewels, stones));
+        assertEquals(0, test.numJewelsInStones(jewels, stones));
     }
 }

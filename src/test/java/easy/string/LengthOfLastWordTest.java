@@ -1,33 +1,27 @@
 package easy.string;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LengthOfLastWordTest {
-    private LengthOfLastWord lengthOfLastWord;
-
-    @BeforeEach
-    void init() {
-        this.lengthOfLastWord = new LengthOfLastWord();
-    }
+    private final LengthOfLastWord test = new LengthOfLastWord();
 
     @Test
-    void lengthOfLastWordExample1() {
+    void example1() {
         String s = "Hello World";
-        assertEquals(5, lengthOfLastWord.lengthOfLastWord(s));
+        assertEquals(5, test.lengthOfLastWord(s));
     }
 
     @Test
-    void lengthOfLastWordExample2() {
+    void example2() {
         String s = "   fly me   to   the moon  ";
-        assertEquals(4, lengthOfLastWord.lengthOfLastWord(s));
+        assertEquals(4, test.lengthOfLastWord(s));
     }
 
     @Test
-    void lengthOfLastWordExample3() {
+    void example3() {
         String s = "luffy is still joyboy";
-        assertEquals(6, lengthOfLastWord.lengthOfLastWord(s));
+        assertEquals(6, test.lengthOfLastWord(s));
     }
 }

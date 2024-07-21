@@ -1,29 +1,25 @@
 package easy.queue;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ImplementQueueUsingStacksTest {
-    private ImplementQueueUsingStacks queue;
-
-    @BeforeEach
-    void init() {
-        this.queue = new ImplementQueueUsingStacks();
-    }
+    private final ImplementQueueUsingStacks test = new ImplementQueueUsingStacks();
 
     @Test
-    void ImplementQueueUsingStacksExample1() {
-        assertTrue(queue.empty());
-        queue.push(1);
-        queue.push(2);
-        queue.push(3);
-        assertFalse(queue.empty());
-        assertEquals(1, queue.peek());
-        assertEquals(1, queue.pop());
-        assertEquals(2, queue.pop());
-        assertEquals(3, queue.pop());
-        assertTrue(queue.empty());
+    void example1() {
+        assertTrue(test.empty());
+        test.push(1);
+        test.push(2);
+        test.push(3);
+        assertFalse(test.empty());
+        assertEquals(1, test.peek());
+        assertEquals(1, test.pop());
+        assertEquals(2, test.pop());
+        assertEquals(3, test.pop());
+        assertTrue(test.empty());
     }
 }
