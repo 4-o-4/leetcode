@@ -5,29 +5,29 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FindFirstPalindromicStringInTheArrayTest {
-    private final FindFirstPalindromicStringInTheArray test = new FindFirstPalindromicStringInTheArray();
+    private final FindFirstPalindromicStringInTheArray solution = new FindFirstPalindromicStringInTheArray();
 
     @Test
     void example1() {
         String[] words = {"abc", "car", "ada", "racecar", "cool"};
-        assertEquals("ada", test.firstPalindrome(words));
+        assertEquals("ada", solution.firstPalindrome(words));
     }
 
     @Test
     void example2() {
         String[] words = {"notapalindrome", "racecar"};
-        assertEquals("racecar", test.firstPalindrome(words));
+        assertEquals("racecar", solution.firstPalindrome(words));
     }
 
     @Test
     void example3() {
         String[] words = {"def", "ghi"};
-        assertEquals("", test.firstPalindrome(words));
+        assertEquals("", solution.firstPalindrome(words));
     }
 
     @Test
     void example4() {
         String[] words = {"def", "amma"};
-        assertEquals("amma", test.firstPalindrome(words));
+        assertEquals("amma", solution.firstPalindrome(words));
     }
 }

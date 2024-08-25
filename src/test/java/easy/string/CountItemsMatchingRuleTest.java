@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CountItemsMatchingRuleTest {
-    private final CountItemsMatchingRule test = new CountItemsMatchingRule();
+    private final CountItemsMatchingRule solution = new CountItemsMatchingRule();
 
     @Test
     void example1() {
@@ -18,7 +18,7 @@ class CountItemsMatchingRuleTest {
         );
         String ruleKey = "color";
         String ruleValue = "silver";
-        assertEquals(1, test.countMatches(items, ruleKey, ruleValue));
+        assertEquals(1, solution.countMatches(items, ruleKey, ruleValue));
     }
 
     @Test
@@ -30,6 +30,6 @@ class CountItemsMatchingRuleTest {
         );
         String ruleKey = "type";
         String ruleValue = "phone";
-        assertEquals(2, test.countMatches(items, ruleKey, ruleValue));
+        assertEquals(2, solution.countMatches(items, ruleKey, ruleValue));
     }
 }

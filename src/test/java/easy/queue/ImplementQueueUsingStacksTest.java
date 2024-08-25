@@ -7,19 +7,19 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ImplementQueueUsingStacksTest {
-    private final ImplementQueueUsingStacks test = new ImplementQueueUsingStacks();
+    private final ImplementQueueUsingStacks solution = new ImplementQueueUsingStacks();
 
     @Test
     void example1() {
-        assertTrue(test.empty());
-        test.push(1);
-        test.push(2);
-        test.push(3);
-        assertFalse(test.empty());
-        assertEquals(1, test.peek());
-        assertEquals(1, test.pop());
-        assertEquals(2, test.pop());
-        assertEquals(3, test.pop());
-        assertTrue(test.empty());
+        assertTrue(solution.empty());
+        solution.push(1);
+        solution.push(2);
+        solution.push(3);
+        assertFalse(solution.empty());
+        assertEquals(1, solution.peek());
+        assertEquals(1, solution.pop());
+        assertEquals(2, solution.pop());
+        assertEquals(3, solution.pop());
+        assertTrue(solution.empty());
     }
 }

@@ -6,17 +6,17 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CheckIfTheSentenceIsPangramTest {
-    private final CheckIfTheSentenceIsPangram test = new CheckIfTheSentenceIsPangram();
+    private final CheckIfTheSentenceIsPangram solution = new CheckIfTheSentenceIsPangram();
 
     @Test
     void example1() {
         String sentence = "thequickbrownfoxjumpsoverthelazydog";
-        assertTrue(test.checkIfPangram(sentence));
+        assertTrue(solution.checkIfPangram(sentence));
     }
 
     @Test
     void example2() {
         String sentence = "leetcode";
-        assertFalse(test.checkIfPangram(sentence));
+        assertFalse(solution.checkIfPangram(sentence));
     }
 }

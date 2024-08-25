@@ -6,17 +6,17 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class RobotReturnToOriginTest {
-    private final RobotReturnToOrigin test = new RobotReturnToOrigin();
+    private final RobotReturnToOrigin solution = new RobotReturnToOrigin();
 
     @Test
     void example1() {
         String moves = "UD";
-        assertTrue(test.judgeCircle(moves));
+        assertTrue(solution.judgeCircle(moves));
     }
 
     @Test
     void example2() {
         String moves = "LL";
-        assertFalse(test.judgeCircle(moves));
+        assertFalse(solution.judgeCircle(moves));
     }
 }

@@ -6,17 +6,17 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DetermineIfStringHalvesAreAlikeTest {
-    private final DetermineIfStringHalvesAreAlike test = new DetermineIfStringHalvesAreAlike();
+    private final DetermineIfStringHalvesAreAlike solution = new DetermineIfStringHalvesAreAlike();
 
     @Test
     void example1() {
         String s = "book";
-        assertTrue(test.halvesAreAlike(s));
+        assertTrue(solution.halvesAreAlike(s));
     }
 
     @Test
     void example2() {
         String s = "textbook";
-        assertFalse(test.halvesAreAlike(s));
+        assertFalse(solution.halvesAreAlike(s));
     }
 }

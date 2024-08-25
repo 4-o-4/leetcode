@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CountTheNumberOfVowelStringsInRangeTest {
-    private final CountTheNumberOfVowelStringsInRange test = new CountTheNumberOfVowelStringsInRange();
+    private final CountTheNumberOfVowelStringsInRange solution = new CountTheNumberOfVowelStringsInRange();
 
     @Test
     void example1() {
         String[] words = {"are", "amy", "u"};
         int left = 0;
         int right = 2;
-        assertEquals(2, test.vowelStrings(words, left, right));
+        assertEquals(2, solution.vowelStrings(words, left, right));
     }
 
     @Test
@@ -20,6 +20,6 @@ class CountTheNumberOfVowelStringsInRangeTest {
         String[] words = {"hey", "aeo", "mu", "ooo", "artro"};
         int left = 1;
         int right = 4;
-        assertEquals(3, test.vowelStrings(words, left, right));
+        assertEquals(3, solution.vowelStrings(words, left, right));
     }
 }

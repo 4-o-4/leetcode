@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CountDaysSpentTogetherTest {
-    private final CountDaysSpentTogether test = new CountDaysSpentTogether();
+    private final CountDaysSpentTogether solution = new CountDaysSpentTogether();
 
     @Test
     void example1() {
@@ -13,7 +13,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
                 leaveBob = "08-19";
-        assertEquals(3, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(3, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -22,7 +22,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "10-31",
                 arriveBob = "11-01",
                 leaveBob = "12-31";
-        assertEquals(0, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(0, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -31,7 +31,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
                 leaveBob = "08-18";
-        assertEquals(3, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(3, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -40,7 +40,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
                 leaveBob = "08-17";
-        assertEquals(3, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(3, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -49,7 +49,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
                 leaveBob = "08-18";
-        assertEquals(4, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(4, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -58,7 +58,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
                 leaveBob = "08-15";
-        assertEquals(1, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(1, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -67,7 +67,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-12",
                 leaveBob = "08-20";
-        assertEquals(4, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(4, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -76,7 +76,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-18",
                 arriveBob = "08-16",
                 leaveBob = "08-18";
-        assertEquals(3, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(3, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -85,7 +85,7 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "10-19",
                 arriveBob = "06-19",
                 leaveBob = "10-20";
-        assertEquals(49, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(49, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 
     @Test
@@ -94,6 +94,6 @@ class CountDaysSpentTogetherTest {
                 leaveAlice = "08-02",
                 arriveBob = "08-02",
                 leaveBob = "08-02";
-        assertEquals(1, test.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
+        assertEquals(1, solution.countDaysTogether(arriveAlice, leaveAlice, arriveBob, leaveBob));
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DestinationCityTest {
-    private final DestinationCity test = new DestinationCity();
+    private final DestinationCity solution = new DestinationCity();
 
     @Test
     void example1() {
@@ -16,7 +16,7 @@ class DestinationCityTest {
                 List.of("New York", "Lima"),
                 List.of("Lima", "Sao Paulo")
         );
-        assertEquals("Sao Paulo", test.destCity(paths));
+        assertEquals("Sao Paulo", solution.destCity(paths));
     }
 
     @Test
@@ -26,7 +26,7 @@ class DestinationCityTest {
                 List.of("D", "B"),
                 List.of("C", "A")
         );
-        assertEquals("A", test.destCity(paths));
+        assertEquals("A", solution.destCity(paths));
     }
 
     @Test
@@ -34,7 +34,7 @@ class DestinationCityTest {
         List<List<String>> paths = List.of(
                 List.of("A", "Z")
         );
-        assertEquals("Z", test.destCity(paths));
+        assertEquals("Z", solution.destCity(paths));
     }
 
     @Test
@@ -46,7 +46,7 @@ class DestinationCityTest {
                 List.of("sxrvXFcqgG", "xKhZXfuBeC"),
                 List.of("TtnllZpKKg", "OAxMijOZgW")
         );
-        assertEquals("OAxMijOZgW", test.destCity(paths));
+        assertEquals("OAxMijOZgW", solution.destCity(paths));
     }
 
     @Test
@@ -59,6 +59,6 @@ class DestinationCityTest {
                 List.of("WQztariTJd", "QfKdgCRgGv"),
                 List.of("tKsFZosRmT", "NhNPVREEsh")
         );
-        assertEquals("NhNPVREEsh", test.destCity(paths));
+        assertEquals("NhNPVREEsh", solution.destCity(paths));
     }
 }
